@@ -215,7 +215,6 @@ hr.linea{
 }
 
 .imgDist{
-    border: 1px solid yellow;
     height:fit-content;
     width: 93%;
     margin:0 0 30px 50px;
@@ -237,7 +236,6 @@ hr.linea{
     font-size: 50px;
 }
 .contenedorDist{
-    border: solid red 2px;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -476,6 +474,7 @@ button:hover {
 /* TELEFONOS PEQUENIOS */
 @media (max-width: 320px) {
 #header, #footer {
+    width: 100%;
     flex-direction: column;
     height: auto;
 }
@@ -514,13 +513,31 @@ button:hover {
 .inicioSection {
     flex-direction: column;
 }
+.h2Lugares{
+    width: 100%;
+    margin-left: 0px;
+    font-size:17px;
+}
+.imgDist{
+    height:fit-content;
+    width: 93%;
+    margin:0 0 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contenedorDist{
+    flex-direction: column;
+}
+.contenedorZonas{
+    width: 88%;
+}
 .titulosMain{
     width: auto;
     font-size: 35px;
     margin-bottom: 0%;
 }
 .contenedorImg {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 .contactoPagina{
     flex-direction: column;
@@ -597,6 +614,24 @@ button:hover {
 }
 .inicioSection {
     flex-direction: column;
+}
+.h2Lugares{
+    width: 100%;
+    margin-left: 0px;
+    font-size:17px;
+    height: 40px;
+}
+.imgDist{
+    height:fit-content;
+    width: 93%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.contenedorDist{
+    flex-direction: column;
+}
+.contenedorZonas{
+    width: 88%;
 }
 .titulosMain{
     width: auto;
@@ -746,8 +781,20 @@ button:hover {
 .inicioTitulo {
     font-size: 50px;
 }
+.h2Lugares{
+    width: 100%;
+    margin-left: 0px;
+    height: 40px;
+}
+.imgDist{
+    height:fit-content;
+    width: 93%;
+    display: grid;
+    margin: 30px;
+    grid-template-columns: repeat(5, 1fr);
+}
 .contenedorImg {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .titulosMain {
     font-size: 60px;
