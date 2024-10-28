@@ -478,7 +478,14 @@ button:hover {
     flex-direction: column;
     height: auto;
 }
-.navBar_ul {
+#navBar{
+    border: solid 1px yellow;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.navBar_ul{
+    margin-left: 80px;
     flex-direction: column;
 }
 .navBar_ul li a{
@@ -486,8 +493,11 @@ button:hover {
     justify-content: center;
 }
 .logoH {
+    border: solid 1px yellow;
+    justify-content: center;
     width: 180px;
     height: 80px;
+    margin-left: 40px;
 }
 .footerP{
     font-size: 17px;
