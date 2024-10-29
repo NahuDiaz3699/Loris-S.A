@@ -189,27 +189,15 @@ hr.linea{
     background-color: black;
     bottom: -2px;
     left: 0;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 .subInicio:hover::after {
     width: 100%;
 }
 
-.distribuidor, .ubicacion, .productosInicio {
-    border-radius: 10px;
-    height: 100px;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-}
-
-.distribuidor:hover, .ubicacion:hover, .productosInicio:hover {
-    transform: scale(1.1);
-}
 .h2Lugares{
+    height: 90px;
     margin-right: 90px;
     text-align: center;
 }
@@ -217,6 +205,7 @@ hr.linea{
 .imgDist{
     height:fit-content;
     width: 93%;
+    border-radius: 10px;
     margin:0 0 30px 50px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -230,11 +219,27 @@ hr.linea{
 
 /* DISTRIBUIDORES */
 
+.distribuidoresPagina{
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
 .titulosDist{
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     font-family: "Playfair Display", serif;
     font-size: 50px;
+    height: 150px;
 }
+
+.h5Zonas{
+    margin: 0px 0px 20px;
+    text-align: center;
+}
+
 .contenedorDist{
     width: 100%;
     height: fit-content;
@@ -249,12 +254,11 @@ hr.linea{
     height: 300px;
     padding: 20px;
     margin: 20px;
-    text-align: center;
 }
 
-.pDist{
-    font-size: 20px;
-    margin-top: 10px;
+.listZonas{
+    border-radius: 10px;
+    padding-left: 5px;
 }
 
 /* PRODUCTOS */
@@ -303,11 +307,7 @@ hr.linea{
     height:280px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-}
-
-.imgProductos:hover {
-    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 .textoOverlay {
@@ -320,12 +320,8 @@ hr.linea{
     font-family: "Roboto", serif;
 }
 
-.contenedorImagen:hover .overlay {
-    opacity: 0;
-}
-
 .contenedorImagen:hover .imgProductos {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 /* CONTACTO */
