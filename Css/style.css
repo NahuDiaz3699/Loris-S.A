@@ -311,13 +311,10 @@ hr.linea{
 }
 
 .textoOverlay {
-    font-size: 20px;
     text-align: center;
-    font-style: oblique;
-    font:bolder;
     padding: 5px;
     margin-bottom: 15px;
-    font-family: "Roboto", serif;
+    font-family: "Playfair Display", serif;
 }
 
 .contenedorImagen:hover .imgProductos {
@@ -812,6 +809,9 @@ button:hover {
     margin: 30px;
     grid-template-columns: repeat(5, 1fr);
 }
+.contenedorZonas{
+    height: fit-content;
+}
 .contenedorImg {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -858,7 +858,9 @@ button:hover {
     padding: 0%;
 }
 .headerRedes{
+    border: yellow solid 1px;
     margin-left: 200px;
+    height: fit-content;
 }
 .inicioTitulo {
     font-size: 55px;
@@ -898,6 +900,44 @@ button:hover {
 }
 
 /* PANTALLAS GRANDES */
-@media (min-width: 1281px){
-
+@media (min-width: 1281px) and (max-width: 1920px){
+    #header{
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .logoH{
+        width: 25%;
+        padding: 10px;
+        height: auto;
+        justify-content: center;
+    }
+    .imagenLogo{
+        height: 100px;
+        width: 120px;
+        margin-right: 28px;
+    }
+    #navBar{
+        width: 50%;
+        margin: 0%;
+        padding: 5px;
+        justify-content: center;
+    }
+    .navBar_ul{
+        justify-content: center;
+        font-size: large;
+        padding: 0%;
+    }
+    .inicioTitulo {
+        font-size: 55px;
+    }
+    .contenedorImg {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .titulosMain {
+        font-size: 60px;
+        width: 45%;
+    }
 }
